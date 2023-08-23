@@ -8,13 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_toast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/toast"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="37dp" />
 
     <TextView
         android:id="@+id/txtNumber"
@@ -28,11 +21,46 @@
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="126dp" />
 
-    <Button
-        android:id="@+id/btn_count"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/count"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toast"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="37dp"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="194dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_margin="10dp"
+        />
+
 </LinearLayout>

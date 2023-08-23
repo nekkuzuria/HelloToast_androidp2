@@ -3,4 +3,5 @@
     <string name="toast">Toast</string>
     <string name="txtNumber">0</string>
     <string name="count">COUNT</string>
+    <string name="reset">RESET</string>
 </resources>

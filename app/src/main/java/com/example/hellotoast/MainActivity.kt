@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
                  Toast.LENGTH_SHORT).show()
             }
 
+            btnReset.setOnClickListener(){
+                number = 0
+                txtNumber.text = number.toString()
+            }
+
         }
 
 
